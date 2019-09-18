@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CustomToolbar</string>
+    <string name="toolbar_title">Title</string>
+    <string name="toolbar_connect_button">Connect</string>
+</resources>
