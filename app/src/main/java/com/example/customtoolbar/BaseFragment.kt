@@ -20,7 +20,7 @@ abstract class BaseFragment : Fragment() {
                     iv_home.visibility = VISIBLE
                     iv_home.setOnClickListener {
                         animateClickOnView(it)
-                        onBackPressed()
+                        //onBackPressed()
                     }
                     tv_title.setText(R.string.toolbar_title)
                     tv_title.setOnClickListener { animateClickOnView(it) }//always visible by default in xml
