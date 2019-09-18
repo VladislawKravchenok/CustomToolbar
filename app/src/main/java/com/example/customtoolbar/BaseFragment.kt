@@ -18,7 +18,10 @@ abstract class BaseFragment : Fragment() {
             is MainFragment -> {
                 mainActivity.run {
                     iv_home.visibility = VISIBLE
-                    iv_home.setOnClickListener { animateClickOnView(it) }
+                    iv_home.setOnClickListener {
+                        animateClickOnView(it)
+                        onBackPressed()
+                    }
                     tv_title.setText(R.string.toolbar_title)
                     tv_title.setOnClickListener { animateClickOnView(it) }//always visible by default in xml
                     //tv_connect_button.setOnClickListener { animateClickOnView(it) }
